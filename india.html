@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Cultural Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+          font-family: 'Poppins', sans-serif;
+          background-color: #f8f9fa;
+        }
+        header {
+          background: linear-gradient(45deg, #ff9800, #f44336);
+          color: white;
+          padding: 20px 0;
+          text-align: center;
+          position: relative;
+        }
+        .logo {
+          width: 80px;
+          position: absolute;
+          left: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .section-title {
+          font-size: 1.8rem;
+          font-weight: 600;
+          margin-top: 40px;
+        }
+        .category-card {
+          background-color: white;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.2s ease;
+        }
+        .category-card:hover {
+          transform: translateY(-5px);
+        }
+        .category-content {
+          padding: 20px;
+        }
+        footer {
+          background: #343a40;
+          color: white;
+          text-align: center;
+          padding: 15px;
+        }
+        .accordion-button:not(.collapsed) {
+          color: #ffffff;
+          background-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+         alt="Indian Flag" class="logo">
+    <h1>India Cultural Showcase</h1>
+    <p>Explore the rich culture and heritage of India through different categories</p>
+</header>
+
+<div class="container mt-4">
+    <div class="accordion" id="culturalAccordion">
+
+        <!-- Category Section Template -->
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#national" aria-expanded="false" aria-controls="national">
+                    Indian National Anthem
+                </button>
+            </h2>
+            <div id="national" class="accordion-collapse collapse" data-bs-parent="#culturalAccordion">
+                <div class="accordion-body">
+                    <h2>Indian National Anthem</h2>
+                    <div class="anthem">
+                        <p>जन गण मन अधिनायक जय हे<br>
+                            भारत भाग्य विधाता<br>
+                            पंजाब सिंध गुजरात मराठा<br>
+                            द्रविड़ उत्कल बंग<br>
+                            बिन्ध्य हिमाचल यमुना गंगा<br>
+                            उच्छल जलधि तरंग<br>
+                            तव शुभ नामे जागे<br>
+                            तव शुभ आशिष मागे<br>
+                            गाहे तव जयगाथा<br>
+                            जन गण मंगल दायक जय हे<br>
+                            भारत भाग्य विधाता<br>
+                            जय हे जय हे जय हे<br>
+                            जय जय जय जय हे</p>
+
+                        <div class="translation">
+                            <p><strong>Translation:</strong><br>
+                                Thou art the ruler of the minds of all people,<br>
+                                Dispenser of India’s destiny.<br>
+                                Thy name rouses the hearts of the Punjab, Sindh, Gujarat, and Maratha,<br>
+                                Of the Dravid, Orissa, and Bengal;<br>
+                                It echoes in the hills of the Vindhyas and Himalayas,<br>
+                                And mingles in the music of the Yamuna and Ganga.<br>
+                                They chant thy glorious name.<br>
+                                They pray for thy blessings.<br>
+                                The salvation of the people lies in thy hands.<br>
+                                Victory to thee, O India, The light of the world.<br>
+                                Victory to thee, Victory to thee, Victory to thee,<br>
+                                Victory, Victory, Victory to thee!</p>
+                        </div>
+                    </div>
+                    <div class="audio-container">
+                        <p>Click the play button to listen to the Indian National Anthem.</p>
+                        <audio class="audio-player" controls>
+                            <source src="path/to/your/indian_national_anthem.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#indiancapital" aria-expanded="false" aria-controls="indiancapital">
+                    Indian States and its Capital
+                </button>
+            </h2>
+            <div id="indiancapital" class="accordion-collapse collapse" data-bs-parent="#culturalAccordion">
+                <div class="accordion-body">
+                    <h2>Indian States and its Capitals</h2>
+                </div>
+                <div class="container">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>State</th>
+                            <th>Capital City</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Andhra Pradesh</td>
+                            <td>Amaravati</td>
+                        </tr>
+                        <tr>
+                            <td>Arunachal Pradesh</td>
+                            <td>Itanagar</td>
+                        </tr>
+                        <tr>
+                            <td>Assam</td>
+                            <td>Dispur</td>
+                        </tr>
+                        <tr>
+                            <td>Bihar</td>
+                            <td>Patna</td>
+                        </tr>
+                        <tr>
+                            <td>Chhattisgarh</td>
+                            <td>Raipur</td>
+                        </tr>
+                        <tr>
+                            <td>Goa</td>
+                            <td>Panjim</td>
+                        </tr>
+                        <tr>
+                            <td>Gujarat</td>
+                            <td>Gandhinagar</td>
+                        </tr>
+                        <tr>
+                            <td>Haryana</td>
+                            <td>Chandigarh</td>
+                        </tr>
+                        <tr>
+                            <td>Himachal Pradesh</td>
+                            <td>Shimla</td>
+                        </tr>
+                        <tr>
+                            <td>Jharkhand</td>
+                            <td>Ranchi</td>
+                        </tr>
+                        <tr>
+                            <td>Karnataka</td>
+                            <td>Bengaluru</td>
+                        </tr>
+                        <tr>
+                            <td>Kerala</td>
+                            <td>Thiruvananthapuram</td>
+                        </tr>
+                        <tr>
+                            <td>Madhya Pradesh</td>
+                            <td>Bhopal</td>
+                        </tr>
+                        <tr>
+                            <td>Maharashtra</td>
+                            <td>Mumbai</td>
+                        </tr>
+                        <tr>
+                            <td>Manipur</td>
+                            <td>Imphal</td>
+                        </tr>
+                        <tr>
+                            <td>Meghalaya</td>
+                            <td>Shillong</td>
+                        </tr>
+                        <tr>
+                            <td>Mizoram</td>
+                            <td>Aizawl</td>
+                        </tr>
+                        <tr>
+                            <td>Nagaland</td>
+                            <td>Kohima</td>
+                        </tr>
+                        <tr>
+                            <td>Odisha</td>
+                            <td>Bhubaneswar</td>
+                        </tr>
+                        <tr>
+                            <td>Punjab</td>
+                            <td>Chandigarh</td>
+                        </tr>
+                        <tr>
+                            <td>Rajasthan</td>
+                            <td>Jaipur</td>
+                        </tr>
+                        <tr>
+                            <td>Sikkim</td>
+                            <td>Gangtok</td>
+                        </tr>
+                        <tr>
+                            <td>Tamil Nadu</td>
+                            <td>Chennai</td>
+                        </tr>
+                        <tr>
+                            <td>Telangana</td>
+                            <td>Hyderabad</td>
+                        </tr>
+                        <tr>
+                            <td>Tripura</td>
+                            <td>Agartala</td>
+                        </tr>
+                        <tr>
+                            <td>Uttar Pradesh</td>
+                            <td>Lucknow</td>
+                        </tr>
+                        <tr>
+                            <td>Uttarakhand</td>
+                            <td>Dehradun</td>
+                        </tr>
+                        <tr>
+                            <td>West Bengal</td>
+                            <td>Kolkata</td>
+                        </tr>
+                        <tr>
+                            <td>Andaman and Nicobar Islands</td>
+                            <td>Port Blair</td>
+                        </tr>
+                        <tr>
+                            <td>Chandigarh</td>
+                            <td>Chandigarh</td>
+                        </tr>
+                        <tr>
+                            <td>Dadra and Nagar Haveli and Daman and Diu</td>
+                            <td>Daman</td>
+                        </tr>
+                        <tr>
+                            <td>Lakshadweep</td>
+                            <td>Kavaratti</td>
+                        </tr>
+                        <tr>
+                            <td>Delhi</td>
+                            <td>New Delhi</td>
+                        </tr>
+                        <tr>
+                            <td>Puducherry</td>
+                            <td>Puducherry</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#clothingSection" aria-expanded="false" aria-controls="clothingSection">
+                    Clothing and Jewelry
+                </button>
+            </h2>
+            <div id="clothingSection" class="accordion-collapse collapse" data-bs-parent="#culturalAccordion">
+                <div class="accordion-body">
+                    <h2>Clothing and Jewelry</h2>
+                    <p>Discover vibrant traditional clothing and intricate jewelry styles from across India.</p>
+                    <div class="section">
+
+                        <p><strong>Traditional Clothing:</strong> Sarees, lehengas, salwar kameez, sherwanis, and
+                            dhotis.</p>
+                        <p><strong>Regional Variations:</strong> Banarasi sarees (Uttar Pradesh), Kanjeevaram sarees
+                            (Tamil Nadu), Bandhani (Gujarat/Rajasthan).</p>
+                        <p><strong>Jewelry:</strong> Temple jewelry from South India, Kundan from Rajasthan, Meenakari
+                            from Gujarat, and bangles made of glass, gold, and silver.</p>
+                    </div>
+                    <!-- Add your images, videos, and content here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#currencySection" aria-expanded="false" aria-controls="currencySection">
+                    Currency
+                </button>
+            </h2>
+            <div id="currencySection" class="accordion-collapse collapse" data-bs-parent="#culturalAccordion">
+                <div class="accordion-body">
+                    <h2>Currency</h2>
+                    <p>Learn about India's currency, the Indian Rupee (₹), and its rich financial heritage.</p>
+                    <div class="section">
+
+                        <p><strong>Indian Rupee (INR):</strong></p>
+                        <ul>
+                            <li><strong>Coins:</strong> ₹1, ₹2, ₹5, ₹10</li>
+                            <li><strong>Notes:</strong> ₹10, ₹20, ₹50, ₹100, ₹200, ₹500, ₹2000</li>
+                        </ul>
+                        <p><strong>Display Tip:</strong> Showcase replica notes and coins along with the latest currency
+                            designs.</p>
+                        <p><strong>Fun Fact:</strong> The symbol for the Indian Rupee (₹) was introduced in 2010 and is
+                            inspired by the Devanagari letter "र" (ra).</p>
+                    </div>
+                    <!-- Add your images, videos, and content here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#moviesSection" aria-expanded="false" aria-controls="moviesSection">
+                    Movies and Entertainment
+                </button>
+            </h2>
+            <div id="moviesSection" class="accordion-collapse collapse" data-bs-parent="#culturalAccordion">
+                <div class="accordion-body">
+                    <h2>Movies and Entertainment</h2>
+                    <p>Explore India's dynamic film industry, Bollywood, and other regional cinema.</p>
+                    <div class="section">
+
+                        <p><strong>Bollywood:</strong> India’s largest film industry based in Mumbai.</p>
+                        <p><strong>Iconic movies:</strong> Sholay, Dilwale Dulhania Le Jayenge, Lagaan, and RRR.</p>
+                        <p><strong>Famous Actors:</strong> Shah Rukh Khan, Amitabh Bachchan, Deepika Padukone.</p>
+                        <p><strong>Regional Cinemas:</strong> Tollywood (Telugu), Kollywood (Tamil), and Sandalwood
+                            (Kannada).</p>
+                        <p><strong>Display Idea:</strong> Create a mini poster wall with iconic Bollywood movie covers.
+                        </p>
+                        <p><strong>Fun Fact:</strong> India produces more movies annually than any other country!</p>
+                    </div>
+                    <!-- Add your images, videos, and content here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#placesSection" aria-expanded="false" aria-controls="placesSection">
+                    Places and Landmarks
+                </button>
+            </h2>
+            <div id="placesSection" class="accordion-collapse collapse" data-bs-parent="#culturalAccordion">
+                <div class="accordion-body">
+                    <h2>Places and Landmarks</h2>
+                    <p>Discover India's stunning landscapes and iconic historical landmarks.</p>
+                    <div class="section">
+
+                        <p><strong>Natural Wonders:</strong> Himalayas in the north, Kerala Backwaters in the south, and
+                            Thar Desert in the west.</p>
+                        <p><strong>Historical Landmarks:</strong> Taj Mahal (Agra), Red Fort (Delhi), Qutub Minar
+                            (Delhi), and Amber Fort (Jaipur).</p>
+                        <p><strong>Spiritual Places:</strong> Golden Temple (Amritsar), Meenakshi Temple (Madurai), and
+                            Varanasi Ghats (Uttar Pradesh).</p>
+                        <p><strong>Display Tip:</strong> Use postcards, large photos, and a map highlighting these
+                            places.</p>
+                    </div>
+                    <!-- Add your images, videos, and content here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#foodSection" aria-expanded="false" aria-controls="foodSection">
+                    Food and Beverages
+                </button>
+            </h2>
+            <div id="foodSection" class="accordion-collapse collapse" data-bs-parent="#culturalAccordion">
+                <div class="accordion-body">
+                    <h2>Food and Beverages</h2>
+                    <p>Indulge in the diverse flavors of Indian cuisine, from savory dishes to sweet delights.</p>
+                    <div class="section">
+
+                        <p><strong>Staple Foods:</strong> Rice, wheat-based bread (chapatis, parathas), lentils (dal),
+                            and curries.</p>
+                        <p><strong>Popular Dishes:</strong></p>
+                        <ul>
+                            <li><strong>North India:</strong> Butter Chicken, Chole Bhature, and Biryani</li>
+                            <li><strong>South India:</strong> Dosa, Idli, Sambar, and Coconut Chutney</li>
+                            <li><strong>West India:</strong> Pav Bhaji, Dhokla, and Thepla</li>
+                            <li><strong>East India:</strong> Momos, Fish Curry, and Rasgulla</li>
+                        </ul>
+                        <p><strong>Snacks and Sweets:</strong> Samosas, pakoras, jalebis, gulab jamun, and laddoos.</p>
+                        <p><strong>Beverages:</strong> Masala chai (spiced tea) and mango lassi.</p>
+                        <p><strong>Display Idea:</strong> Recipe cards for iconic dishes or a dry snack sample (if
+                            allowed).</p>
+                    </div>
+                    <!-- Add your images, videos, and content here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#festivalsSection" aria-expanded="false" aria-controls="festivalsSection">
+                    Festivals and Celebrations
+                </button>
+            </h2>
+            <div id="festivalsSection" class="accordion-collapse collapse" data-bs-parent="#culturalAccordion">
+                <div class="accordion-body">
+                    <h2>Festivals and Celebrations</h2>
+                    <p>Experience the vibrant festivals and colorful celebrations of India throughout the year.</p>
+                    <div class="section">
+
+                        <p><strong>Diwali:</strong> Festival of Lights with lamps, sweets, and fireworks.</p>
+                        <p><strong>Holi:</strong> Festival of Colors celebrated by throwing colored powders.</p>
+                        <p><strong>Navratri/Durga Puja:</strong> Nine-day celebration with dancing and worship.</p>
+                        <p><strong>Eid and Christmas:</strong> Celebrated with feasts and prayers.</p>
+                        <p><strong>Display Tip:</strong> Decorate with small diyas (lamps) or colorful rangoli patterns.
+                        </p>
+                    </div>
+                    <!-- Add your images, videos, and content here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#musicSection" aria-expanded="false" aria-controls="musicSection">
+                    Music and Dance
+                </button>
+            </h2>
+            <div id="musicSection" class="accordion-collapse collapse" data-bs-parent="#culturalAccordion">
+                <div class="accordion-body">
+                    <h2>Music and Dance</h2>
+                    <p>Discover the classical and folk music traditions and mesmerizing dance forms of India.</p>
+                    <div class="section">
+
+                        <p><strong>Classical Music:</strong> Hindustani (North India) and Carnatic (South India)
+                            traditions.</p>
+                        <p><strong>Dance Forms:</strong> Bharatanatyam (Tamil Nadu), Kathak (North India), Odissi
+                            (Odisha), and Bhangra (Punjab).</p>
+                        <p><strong>Bollywood Dance:</strong> A fun mix of traditional and modern dance styles.</p>
+                        <p><strong>Display Tip:</strong> Play instrumental classical music or Bollywood tracks in the
+                            background.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#languageSection" aria-expanded="false" aria-controls="languageSection">
+                    Language and Scripts
+                </button>
+            </h2>
+            <div id="languageSection" class="accordion-collapse collapse" data-bs-parent="#culturalAccordion">
+                <div class="accordion-body">
+                    <h2>Language and Scripts</h2>
+                    <p>Explore the linguistic diversity of India, with 22 official languages and countless dialects.</p>
+                    <div class="section">
+
+                        <p><strong>Official Languages:</strong> Hindi and English.</p>
+                        <p><strong>Regional Diversity:</strong> Over 22 official languages and hundreds of dialects.</p>
+                        <p><strong>Scripts:</strong> Devanagari (Hindi), Tamil, Bengali, Kannada, and more.</p>
+                        <p><strong>Display Tip:</strong> Create a language wall with common greetings in different
+                            Indian languages.</p>
+                    </div>
+                    <!-- Add your images, videos, and content here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#sportsSection" aria-expanded="false" aria-controls="sportsSection">
+                    Sports
+                </button>
+            </h2>
+            <div id="sportsSection" class="accordion-collapse collapse" data-bs-parent="#culturalAccordion">
+                <div class="accordion-body">
+                    <h2>Sports</h2>
+                    <p>Learn about India's love for cricket, hockey, and other sports.</p>
+                    <div class="section">
+
+                        <p><strong>Cricket:</strong> The most popular sport. India has won the ICC Cricket World Cup
+                            twice (1983, 2011).</p>
+                        <p><strong>Field Hockey:</strong> India's national sport with a rich history of Olympic wins.
+                        </p>
+                        <p><strong>Other Popular Sports:</strong> Badminton, Kabaddi, and Wrestling.</p>
+                        <p><strong>Display Tip:</strong> Include photos of cricket legends like Sachin Tendulkar and
+                            Virat Kohli.</p>
+                    </div>
+                    <!-- Add your images, videos, and content here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#funFactsSection" aria-expanded="false" aria-controls="funFactsSection">
+                    Fun Facts and Contributions
+                </button>
+            </h2>
+            <div id="funFactsSection" class="accordion-collapse collapse" data-bs-parent="#culturalAccordion">
+                <div class="accordion-body">
+                    <h2>Fun Facts and Contributions</h2>
+                    <p>Discover interesting facts and India's contributions to mathematics, science, and culture.</p>
+                    <div class="section">
+
+                        <ul>
+                            <li><strong>Zero:</strong> India is the birthplace of the number zero (Aryabhata).</li>
+                            <li><strong>Yoga:</strong> Originated in India over 5,000 years ago.</li>
+                            <li><strong>Chess:</strong> Believed to have originated in India as Chaturanga.</li>
+                            <li><strong>Spices:</strong> India is the largest producer and exporter of spices.</li>
+                        </ul>
+                    </div>
+                    <!-- Add your images, videos, and content here -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 India Cultural Showcase. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
