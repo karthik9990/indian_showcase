@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a185da9d-170f-489d-b97c-143fe51badec" name="Changes" comment="Adding to repo">
+      <change afterPath="$PROJECT_DIR$/audio/anthem.mpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/10.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/8.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/9.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/coins.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/map.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/india.html" beforeDir="false" afterPath="$PROJECT_DIR$/india.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,11 +39,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "karthik9990"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/karthik9990/indian_showcase.git",
+    "accountId": "3890c7e3-eb78-4a03-96ac-b8c51eb4531f"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2sMlpG0WXGigb76BEToh0ukrqgf" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,9 +66,16 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/ktadakapalli/Indian_showcase"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ktadakapalli\Indian_showcase\images" />
+      <recent name="C:\Users\ktadakapalli\Indian_showcase\audio" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -63,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738276538614</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding to repo">
+      <option name="closed" value="true" />
+      <created>1738364514872</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738364514872</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

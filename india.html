@@ -11,6 +11,13 @@
           font-family: 'Poppins', sans-serif;
           background-color: #f8f9fa;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
         header {
           background: linear-gradient(45deg, #ff9800, #f44336);
           color: white;
@@ -53,13 +60,30 @@
           color: #ffffff;
           background-color: #007bff;
         }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
 <header>
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
          alt="Indian Flag" class="logo">
-    <h1>India Cultural Showcase</h1>
+    <h1>Indian Cultural Showcase</h1>
     <p>Explore the rich culture and heritage of India through different categories</p>
 </header>
 
@@ -111,7 +135,7 @@
                     <div class="audio-container">
                         <p>Click the play button to listen to the Indian National Anthem.</p>
                         <audio class="audio-player" controls>
-                            <source src="path/to/your/indian_national_anthem.mp3" type="audio/mp3">
+                            <source src="audio/anthem.mpeg" type="audio/mpeg">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -127,12 +151,10 @@
                 </button>
             </h2>
             <div id="indiancapital" class="accordion-collapse collapse" data-bs-parent="#culturalAccordion">
-                <div class="accordion-body">
-                    <h2>Indian States and its Capitals</h2>
-                </div>
-                <div class="container">
-                    <table class="table table-bordered">
-                        <thead>
+                <div class="container mt-5">
+                    <h1 class="text-center mb-4">Indian States and its Capitals</h1>
+                    <table class="table table-bordered table-hover">
+                        <thead class="table table-hover table-success">
                         <tr>
                             <th>State</th>
                             <th>Capital City</th>
@@ -300,7 +322,6 @@
                         <p><strong>Jewelry:</strong> Temple jewelry from South India, Kundan from Rajasthan, Meenakari
                             from Gujarat, and bangles made of glass, gold, and silver.</p>
                     </div>
-                    <!-- Add your images, videos, and content here -->
                 </div>
             </div>
         </div>
@@ -323,10 +344,11 @@
                             <li><strong>Coins:</strong> ₹1, ₹2, ₹5, ₹10</li>
                             <li><strong>Notes:</strong> ₹10, ₹20, ₹50, ₹100, ₹200, ₹500, ₹2000</li>
                         </ul>
-                        <p><strong>Display Tip:</strong> Showcase replica notes and coins along with the latest currency
-                            designs.</p>
                         <p><strong>Fun Fact:</strong> The symbol for the Indian Rupee (₹) was introduced in 2010 and is
                             inspired by the Devanagari letter "र" (ra).</p>
+                        <img src="images/coins.jpeg" class="coins" alt="Indian Coins">
+
+
                     </div>
                     <!-- Add your images, videos, and content here -->
                 </div>
@@ -343,7 +365,8 @@
             <div id="moviesSection" class="accordion-collapse collapse" data-bs-parent="#culturalAccordion">
                 <div class="accordion-body">
                     <h2>Movies and Entertainment</h2>
-                    <p>Explore India's dynamic film industry, Bollywood, and other regional cinema.</p>
+                    <p>Explore India's has dynamic film industr likes of Bollywood, Tollywood, sandalwood, kollywood,
+                        mollywood and other regional cinema.</p>
                     <div class="section">
 
                         <p><strong>Bollywood:</strong> India’s largest film industry based in Mumbai.</p>
@@ -351,11 +374,22 @@
                         <p><strong>Famous Actors:</strong> Shah Rukh Khan, Amitabh Bachchan, Deepika Padukone.</p>
                         <p><strong>Regional Cinemas:</strong> Tollywood (Telugu), Kollywood (Tamil), and Sandalwood
                             (Kannada).</p>
-                        <p><strong>Display Idea:</strong> Create a mini poster wall with iconic Bollywood movie covers.
-                        </p>
                         <p><strong>Fun Fact:</strong> India produces more movies annually than any other country!</p>
                     </div>
-                    <!-- Add your images, videos, and content here -->
+                    <div class="gallery">
+                        <img src="images/1.jpeg" alt="Image 1">
+                        <img src="images/2.jpeg" alt="Image 2">
+                        <img src="images/3.jpeg" alt="Image 3">
+                        <img src="images/4.jpeg" alt="Image 4">
+                        <img src="images/5.jpeg" alt="Image 5">
+                        <img src="images/6.jpeg" alt="Image 6">
+                        <img src="images/7.jpg" alt="Image 7">
+                        <img src="images/8.jpeg" alt="Image 8">
+                        <img src="images/9.jpeg" alt="Image 9">
+                        <img src="images/10.jpeg" alt="Image 10">
+                        <img src="images/11.jpg" alt="Image 11">
+                        <img src="images/12.jpg" alt="Image 12">
+                    </div>
                 </div>
             </div>
         </div>
@@ -379,8 +413,7 @@
                             (Delhi), and Amber Fort (Jaipur).</p>
                         <p><strong>Spiritual Places:</strong> Golden Temple (Amritsar), Meenakshi Temple (Madurai), and
                             Varanasi Ghats (Uttar Pradesh).</p>
-                        <p><strong>Display Tip:</strong> Use postcards, large photos, and a map highlighting these
-                            places.</p>
+                        <img src="images/map.jpg" alt="map">
                     </div>
                     <!-- Add your images, videos, and content here -->
                 </div>
@@ -411,8 +444,7 @@
                         </ul>
                         <p><strong>Snacks and Sweets:</strong> Samosas, pakoras, jalebis, gulab jamun, and laddoos.</p>
                         <p><strong>Beverages:</strong> Masala chai (spiced tea) and mango lassi.</p>
-                        <p><strong>Display Idea:</strong> Recipe cards for iconic dishes or a dry snack sample (if
-                            allowed).</p>
+
                     </div>
                     <!-- Add your images, videos, and content here -->
                 </div>
@@ -436,10 +468,9 @@
                         <p><strong>Holi:</strong> Festival of Colors celebrated by throwing colored powders.</p>
                         <p><strong>Navratri/Durga Puja:</strong> Nine-day celebration with dancing and worship.</p>
                         <p><strong>Eid and Christmas:</strong> Celebrated with feasts and prayers.</p>
-                        <p><strong>Display Tip:</strong> Decorate with small diyas (lamps) or colorful rangoli patterns.
-                        </p>
+
                     </div>
-                    <!-- Add your images, videos, and content here -->
+
                 </div>
             </div>
         </div>
@@ -462,8 +493,7 @@
                         <p><strong>Dance Forms:</strong> Bharatanatyam (Tamil Nadu), Kathak (North India), Odissi
                             (Odisha), and Bhangra (Punjab).</p>
                         <p><strong>Bollywood Dance:</strong> A fun mix of traditional and modern dance styles.</p>
-                        <p><strong>Display Tip:</strong> Play instrumental classical music or Bollywood tracks in the
-                            background.</p>
+
                     </div>
 
                 </div>
@@ -486,8 +516,7 @@
                         <p><strong>Official Languages:</strong> Hindi and English.</p>
                         <p><strong>Regional Diversity:</strong> Over 22 official languages and hundreds of dialects.</p>
                         <p><strong>Scripts:</strong> Devanagari (Hindi), Tamil, Bengali, Kannada, and more.</p>
-                        <p><strong>Display Tip:</strong> Create a language wall with common greetings in different
-                            Indian languages.</p>
+
                     </div>
                     <!-- Add your images, videos, and content here -->
                 </div>
@@ -512,8 +541,7 @@
                         <p><strong>Field Hockey:</strong> India's national sport with a rich history of Olympic wins.
                         </p>
                         <p><strong>Other Popular Sports:</strong> Badminton, Kabaddi, and Wrestling.</p>
-                        <p><strong>Display Tip:</strong> Include photos of cricket legends like Sachin Tendulkar and
-                            Virat Kohli.</p>
+
                     </div>
                     <!-- Add your images, videos, and content here -->
                 </div>
@@ -540,21 +568,115 @@
                             <li><strong>Spices:</strong> India is the largest producer and exporter of spices.</li>
                         </ul>
                     </div>
-                    <!-- Add your images, videos, and content here -->
+
                 </div>
             </div>
         </div>
-
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#prime" aria-expanded="false" aria-controls="prime">
+                    Prime Ministers of INDIA
+                </button>
+            </h2>
+            <div id="prime" class="accordion-collapse collapse" data-bs-parent="#culturalAccordion">
+                <div class="container mt-5">
+                    <h1 class="text-center mb-4">Prime Ministers of India</h1>
+                    <table class="table table-bordered table-hover">
+                        <thead class=" table table-hover table-success">
+                        <tr>
+                            <th>Name</th>
+                            <th>Term of Office</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Jawaharlal Nehru</td>
+                            <td>15 August 1947 – 27 May 1964</td>
+                        </tr>
+                        <tr>
+                            <td>Gulzarilal Nanda</td>
+                            <td>27 May 1964 – 9 June 1964 (Interim)</td>
+                        </tr>
+                        <tr>
+                            <td>Lal Bahadur Shastri</td>
+                            <td>9 June 1964 – 11 January 1966</td>
+                        </tr>
+                        <tr>
+                            <td>Gulzarilal Nanda</td>
+                            <td>11 January 1966 – 24 January 1966 (Interim)</td>
+                        </tr>
+                        <tr>
+                            <td>Indira Gandhi</td>
+                            <td>24 January 1966 – 24 March 1977</td>
+                        </tr>
+                        <tr>
+                            <td>Morarji Desai</td>
+                            <td>24 March 1977 – 28 July 1979</td>
+                        </tr>
+                        <tr>
+                            <td>Charan Singh</td>
+                            <td>28 July 1979 – 14 January 1980</td>
+                        </tr>
+                        <tr>
+                            <td>Indira Gandhi</td>
+                            <td>14 January 1980 – 31 October 1984</td>
+                        </tr>
+                        <tr>
+                            <td>Rajiv Gandhi</td>
+                            <td>31 October 1984 – 2 December 1989</td>
+                        </tr>
+                        <tr>
+                            <td>V. P. Singh</td>
+                            <td>2 December 1989 – 10 November 1990</td>
+                        </tr>
+                        <tr>
+                            <td>Chandra Shekhar</td>
+                            <td>10 November 1990 – 21 June 1991</td>
+                        </tr>
+                        <tr>
+                            <td>P. V. Narasimha Rao</td>
+                            <td>21 June 1991 – 16 May 1996</td>
+                        </tr>
+                        <tr>
+                            <td>Atal Bihari Vajpayee</td>
+                            <td>16 May 1996 – 1 June 1996</td>
+                        </tr>
+                        <tr>
+                            <td>H. D. Deve Gowda</td>
+                            <td>1 June 1996 – 21 April 1997</td>
+                        </tr>
+                        <tr>
+                            <td>I. K. Gujral</td>
+                            <td>21 April 1997 – 19 March 1998</td>
+                        </tr>
+                        <tr>
+                            <td>Atal Bihari Vajpayee</td>
+                            <td>19 March 1998 – 22 May 2004</td>
+                        </tr>
+                        <tr>
+                            <td>Manmohan Singh</td>
+                            <td>22 May 2004 – 26 May 2014</td>
+                        </tr>
+                        <tr>
+                            <td>Narendra Modi</td>
+                            <td>26 May 2014 – Present</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2025 India Cultural Showcase. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </div>
-
-<footer>
-    <p>&copy; 2025 India Cultural Showcase. All Rights Reserved.</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
