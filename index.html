@@ -78,6 +78,30 @@
         .gallery img:hover {
             transform: scale(1.05);
         }
+        /* Scroll Up Button */
+    #scrollUpBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      background-color: grey;
+      color: white;
+      border: none;
+      padding: 12px 15px;
+      font-size: 15px;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      width: 45px;
+      height: 45px;
+      text-align: center;
+      border-radius: 20%;
+    }
+
+    #scrollUpBtn:hover {
+      background-color: #0056b3;
+    }
+
     </style>
 </head>
 <body>
@@ -673,6 +697,10 @@
         </div>
     </div>
 
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollUpBtn" title="Go to Top">&#8593;</button>
+
     <footer>
         <p>&copy; 2025 India Cultural Showcase. All Rights Reserved.</p>
     </footer>
@@ -681,6 +709,23 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+    // Show the button when scrolling down 200px
+    const scrollButton = document.getElementById("scrollUpBtn");
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollButton.style.display = "block";
+      } else {
+        scrollButton.style.display = "none";
+      }
+    };
+
+    // Scroll to top when button is clicked
+    scrollButton.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 </div>
 </body>
 </html>
