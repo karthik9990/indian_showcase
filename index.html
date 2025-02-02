@@ -11,6 +11,7 @@
           font-family: 'Poppins', sans-serif;
           background-color: #f8f9fa;
         }
+
         img {
             max-width: 100%;
             height: auto;
@@ -26,10 +27,10 @@
           position: relative;
         }
         .logo {
-          width: 80px;
+          max-width: 80px;
           position: absolute;
-          left: 20px;
-          top: 50%;
+          left: 10px;
+          top: 60px;
           transform: translateY(-50%);
         }
         .section-title {
@@ -81,10 +82,13 @@
 </head>
 <body>
 <header>
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+    <div>
+        <h1><strong>Indian Cultural Showcase</strong></h1>
+        <p>Explore the rich culture and heritage of India through different categories</p>
+    </div>
+    <img id="header-logo"
+         src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
          alt="Indian Flag" class="logo">
-    <h1>Indian Cultural Showcase</h1>
-    <p>Explore the rich culture and heritage of India through different categories</p>
 </header>
 
 <div class="container mt-4">
