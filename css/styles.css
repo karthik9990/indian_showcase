@@ -1,0 +1,113 @@
+body {
+          font-family: 'Poppins', sans-serif;
+          background-color: #f8f9fa;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header {
+          background: linear-gradient(45deg, #ff9800, #f44336);
+          color: white;
+          text-align: center;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px;
+        }
+        /* Left Logo */
+        .logo
+        {
+          max-width: 100px;
+          height: auto;
+        }
+
+        /* Right Emblem */
+        .emblem {
+          max-width: 80px;
+          height: auto;
+        }
+        .emblem-container
+        {
+        text-align: center;
+        max-width: 120px;
+        }
+        .emblem-text
+        {
+        font-size: 0.9rem;
+        color: #333;
+        }
+
+        .section-title {
+          font-size: 1.8rem;
+          font-weight: 600;
+          margin-top: 40px;
+        }
+        .category-card {
+          background-color: white;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.2s ease;
+        }
+        .category-card:hover {
+          transform: translateY(-5px);
+        }
+        .category-content {
+          padding: 20px;
+        }
+        footer {
+          background: #343a40;
+          color: white;
+          text-align: center;
+          padding: 15px;
+        }
+        .accordion-button:not(.collapsed) {
+          color: #ffffff;
+          background-color: #007bff;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        /* Scroll Up Button */
+        #scrollUpBtn {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          display: none;
+          background-color: grey;
+          color: white;
+          border: none;
+          padding: 12px 15px;
+          font-size: 15px;
+          cursor: pointer;
+          z-index: 1000;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+          width: 45px;
+          height: 45px;
+          text-align: center;
+          border-radius: 20%;
+        }
+
+        #scrollUpBtn:hover {
+          background-color: #0056b3;
+        }
