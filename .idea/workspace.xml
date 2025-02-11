@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a185da9d-170f-489d-b97c-143fe51badec" name="Changes" comment="Added Scroll up button.">
-      <change afterPath="$PROJECT_DIR$/images/Emblem.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a185da9d-170f-489d-b97c-143fe51badec" name="Changes" comment="Added emblem and other syling">
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739226520339</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added emblem and other syling">
+      <option name="closed" value="true" />
+      <created>1739290902688</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1739290902688</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -151,6 +157,7 @@
     <MESSAGE value="renamed to index.html" />
     <MESSAGE value="Updated some styles" />
     <MESSAGE value="Added Scroll up button." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Scroll up button." />
+    <MESSAGE value="Added emblem and other syling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added emblem and other syling" />
   </component>
 </project>
