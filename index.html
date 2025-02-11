@@ -22,17 +22,36 @@
         header {
           background: linear-gradient(45deg, #ff9800, #f44336);
           color: white;
-          padding: 20px 0;
           text-align: center;
           position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px;
         }
-        .logo {
+        /* Left Logo */
+        .logo
+        {
+          max-width: 100px;
+          height: auto;
+        }
+
+        /* Right Emblem */
+        .emblem {
           max-width: 80px;
-          position: absolute;
-          left: 10px;
-          top: 60px;
-          transform: translateY(-50%);
+          height: auto;
         }
+        .emblem-container
+        {
+        text-align: center;
+        max-width: 120px;
+        }
+        .emblem-text
+        {
+        font-size: 0.9rem;
+        color: #333;
+        }
+
         .section-title {
           font-size: 1.8rem;
           font-weight: 600;
@@ -106,13 +125,18 @@
 </head>
 <body>
 <header>
-    <div>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+         alt="Indian Flag" class="logo">
+
+    <div class="header-text">
         <h1><strong>Indian Cultural Showcase</strong></h1>
         <p>Explore the rich culture and heritage of India through different categories</p>
     </div>
-    <img
-            src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
-            alt="Indian Flag" class="logo">
+
+    <div class="emblem-container">
+    <img src="images/emblem.png" alt="Indian Emblem" class="emblem">
+    <p class="emblem-text"><strong>Motto:</strong> Satyameva Jayate(Sanksrit)</p>
+  </div>
 </header>
 
 <div class="container mt-4">
